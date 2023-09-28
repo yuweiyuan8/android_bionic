@@ -58,7 +58,7 @@ extern char* __strchr_chk(const char *, int, size_t);
 extern "C++" char* strchrnul(char*, int) __RENAME(strchrnul) __purefunc;
 extern "C++" const char* strchrnul(const char*, int) __RENAME(strchrnul) __purefunc;
 #else
-char* strchrnul(const char*, int) __purefunc;
+char* strrchr(const char*, int) __purefunc;
 #endif
 #endif
 
